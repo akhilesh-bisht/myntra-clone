@@ -2,6 +2,8 @@ let bagItem = [];
 onLoad();
 
 function onLoad() {
+  let bagItemStr = localStorage.getItem("bagItem");
+  bagItem = bagItemStr ? JSON.parse(bagItemStr) : [];
   displayhomepage();
   displaybgCount();
 }
