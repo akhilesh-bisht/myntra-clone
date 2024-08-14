@@ -67,9 +67,18 @@ function displayBagItems() {
   containerElement.innerHTML = innerHTML;
 }
 
+// function removeFromBag(itemId) {
+//   bagItems = bagItem.filter((bagItemId) => bagItemId != itemId);
+//   localStorage.setItem("bagItem", JSON.stringify(bagItems));
+//   loadBagItemObjects();
+//   displaybgCount();
+//   displayBagItems();
+//   displayBagSummary();
+// }
+
 function removeFromBag(itemId) {
-  bagItems = bagItem.filter((bagItemId) => bagItemId != itemId);
-  localStorage.setItem("bagItem", JSON.stringify(bagItems));
+  bagItemObjects = bagItemObjects.filter((bagItem) => bagItem.id != itemId);
+  localStorage.setItem("bagItem", JSON.stringify(bagItemObjects));
   loadBagItemObjects();
   displaybgCount();
   displayBagItems();
