@@ -38,7 +38,7 @@ function displayhomepage(filteredItems = items) {
   let innerHTML = "";
   filteredItems.forEach((item) => {
     innerHTML += `<div class="item-container">
-        <img class="item-imgge" src="${item.image}" alt="">
+        <img class="item-imgge" src="${item.image}" alt="error">
         <div class="rating">${item.rating.stars}|${item.rating.count}</div>
         <div class="company-name">${item.company}</div>
         <div class="item-name">${item.item_name}</div>

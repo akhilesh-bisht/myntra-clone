@@ -91,7 +91,7 @@ const items = [
   },
   {
     id: "007",
-    image: "img/7.jpg",
+    image: "img/7.jpgg",
     company: "The Indian Garage Co",
     item_name: "Men Slim Fit Regular Shorts",
     original_price: 1599,
@@ -117,5 +117,4 @@ const items = [
       count: 5200,
     },
   },
-
 ];
